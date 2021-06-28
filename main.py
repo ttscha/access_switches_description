@@ -1,3 +1,23 @@
+'''
+
+How to use the code
+
+list_ports = generate_ports(2,"doesnt-matter")
+
+ports_organize = organize_ports(list_ports)
+
+pprint(ports_organize)
+
+
+
+
+
+'''
+
+
+
+
+from pprint import pprint
 
 
 def generate_ports(switches, manufacture):
@@ -10,6 +30,9 @@ def generate_ports(switches, manufacture):
 			Will generate code based on manufactire
 
 		Return a list of string as ports
+
+		>>> generate_ports(2,"doesnt-matter")
+		['ge-0/0/0', 'ge-0/0/1', 'ge-0/0/2', 'ge-0/0/3', 'ge-0/0/4', 'ge-0/0/5', 'ge-0/0/6', 'ge-0/0/7', 'ge-0/0/8', 'ge-0/0/9', 'ge-0/0/10', 'ge-0/0/11', 'ge-0/0/12', 'ge-0/0/13', 'ge-0/0/14', 'ge-0/0/15', 'ge-0/0/16', 'ge-0/0/17', 'ge-0/0/18', 'ge-0/0/19', 'ge-0/0/20', 'ge-0/0/21', 'ge-0/0/22', 'ge-0/0/23', 'ge-0/0/24', 'ge-0/0/25', 'ge-0/0/26', 'ge-0/0/27', 'ge-0/0/28', 'ge-0/0/29', 'ge-0/0/30', 'ge-0/0/31', 'ge-0/0/32', 'ge-0/0/33', 'ge-0/0/34', 'ge-0/0/35', 'ge-0/0/36', 'ge-0/0/37', 'ge-0/0/38', 'ge-0/0/39', 'ge-0/0/40', 'ge-0/0/41', 'ge-0/0/42', 'ge-0/0/43', 'ge-0/0/44', 'ge-0/0/45', 'ge-0/0/46', 'ge-0/0/47', 'ge-1/0/0', 'ge-1/0/1', 'ge-1/0/2', 'ge-1/0/3', 'ge-1/0/4', 'ge-1/0/5', 'ge-1/0/6', 'ge-1/0/7', 'ge-1/0/8', 'ge-1/0/9', 'ge-1/0/10', 'ge-1/0/11', 'ge-1/0/12', 'ge-1/0/13', 'ge-1/0/14', 'ge-1/0/15', 'ge-1/0/16', 'ge-1/0/17', 'ge-1/0/18', 'ge-1/0/19', 'ge-1/0/20', 'ge-1/0/21', 'ge-1/0/22', 'ge-1/0/23', 'ge-1/0/24', 'ge-1/0/25', 'ge-1/0/26', 'ge-1/0/27', 'ge-1/0/28', 'ge-1/0/29', 'ge-1/0/30', 'ge-1/0/31', 'ge-1/0/32', 'ge-1/0/33', 'ge-1/0/34', 'ge-1/0/35', 'ge-1/0/36', 'ge-1/0/37', 'ge-1/0/38', 'ge-1/0/39', 'ge-1/0/40', 'ge-1/0/41', 'ge-1/0/42', 'ge-1/0/43', 'ge-1/0/44', 'ge-1/0/45', 'ge-1/0/46', 'ge-1/0/47']
 
 		Need to finish manifacture, for now any value works
 	'''
@@ -36,6 +59,9 @@ def organize_ports(list1):
 	ge-0/0/2 port 001
 
 	return list 
+
+['ge-0/0/0', 'ge-0/0/2', 'ge-0/0/4', 'ge-0/0/6', 'ge-0/0/8', 'ge-0/0/10', 'ge-0/0/12', 'ge-0/0/14', 'ge-0/0/16', 'ge-0/0/18', 'ge-0/0/20', 'ge-0/0/22', 'ge-0/0/24', 'ge-0/0/26', 'ge-0/0/28', 'ge-0/0/30', 'ge-0/0/32', 'ge-0/0/34', 'ge-0/0/36', 'ge-0/0/38', 'ge-0/0/40', 'ge-0/0/42', 'ge-0/0/44', 'ge-0/0/46', 'ge-0/0/1', 'ge-0/0/3', 'ge-0/0/5', 'ge-0/0/7', 'ge-0/0/9', 'ge-0/0/11', 'ge-0/0/13', 'ge-0/0/15', 'ge-0/0/17', 'ge-0/0/19', 'ge-0/0/21', 'ge-0/0/23', 'ge-0/0/25', 'ge-0/0/27', 'ge-0/0/29', 'ge-0/0/31', 'ge-0/0/33', 'ge-0/0/35', 'ge-0/0/37', 'ge-0/0/39', 'ge-0/0/41', 'ge-0/0/43', 'ge-0/0/45', 'ge-0/0/47', 'ge-1/0/0', 'ge-1/0/2', 'ge-1/0/4', 'ge-1/0/6', 'ge-1/0/8', 'ge-1/0/10', 'ge-1/0/12', 'ge-1/0/14', 'ge-1/0/16', 'ge-1/0/18', 'ge-1/0/20', 'ge-1/0/22', 'ge-1/0/24', 'ge-1/0/26', 'ge-1/0/28', 'ge-1/0/30', 'ge-1/0/32', 'ge-1/0/34', 'ge-1/0/36', 'ge-1/0/38', 'ge-1/0/40', 'ge-1/0/42', 'ge-1/0/44', 'ge-1/0/46', 'ge-1/0/1', 'ge-1/0/3', 'ge-1/0/5', 'ge-1/0/7', 'ge-1/0/9', 'ge-1/0/11', 'ge-1/0/13', 'ge-1/0/15', 'ge-1/0/17', 'ge-1/0/19', 'ge-1/0/21', 'ge-1/0/23', 'ge-1/0/25', 'ge-1/0/27', 'ge-1/0/29', 'ge-1/0/31', 'ge-1/0/33', 'ge-1/0/35', 'ge-1/0/37', 'ge-1/0/39', 'ge-1/0/41', 'ge-1/0/43', 'ge-1/0/45', 'ge-1/0/47']
+
 	'''
 
 	temp_list = list1
@@ -63,40 +89,14 @@ def organize_ports(list1):
 	return result
 
 
-list_ports = generate_ports(2,"tiago")
-
-ports_organize = organize_ports(list_ports)
-
-from pprint import pprint
-pprint(ports_organize)
+'''
+					CODE
 
 
-list1 = ["D46A91E24351","00:04:A5:0C:6A:28","00107FE24CB3","006074068E76","00:1B:21:E4:73:04","D46A91E24350","00:04:A5:0C:6A:55","00107FEE216E","00107FEE2163","00107FEBCB40","00107FEBCB41","006074068F2E","00:1B:21:E4:72:72","D46A91E2434F","00:04:A5:0C:6A:27","00107FE26D93","006074068FE6","00:1B:21:E4:74:F0"]
-
-response = []
-
-for raw_item in list1:
-	item = raw_item.strip()
-	temp = ""
-	if len(item) == 12:
-		temp = item[0:2] + ":" + item[2:4] + ":" + item[4:6] + ":" +item[6:8] + ":" +item[8:10] + ":" +item[10:12]
-		print(temp)
-		response.append(temp)
-	elif item[2] == "-":
-		new_item = item.split("-")
-		temp = new_item[0] + ":" + new_item[1] + ":" + new_item[2] + ":" + new_item[3] + ":" + new_item[4] + ":" + new_item[5]
-		print(temp)
-		response.append(temp)
-	else:
-		print(item)
-		response.append(item)
-
-print("*" * 50)
-print("*" * 50)
-print("*" * 50)
-print("*" * 50)
-print("*" * 50)
+'''
 
 
-for i in response:
-	print(i)
+
+
+
+
