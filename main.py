@@ -1,3 +1,7 @@
+import logging
+
+logging.basicConfig(level=logging.INFO)
+
 '''
 
 How to use the code
@@ -38,7 +42,6 @@ def generate_ports(switches, manufacture):
 		for i in range(0,switches):
 			for port in range(0,48):
 				result_ports.append(f"ge-{i}/0/{port}")
-
 		return result_ports
 
 	elif manufacture == "cisco_catalyst":
@@ -48,6 +51,7 @@ def generate_ports(switches, manufacture):
 		for i in range(0,switches):
 			for port in range(0,48):
 				result_ports.append(f"gi-{i}/0/{port + 1}")
+		
 
 		return result_ports
 
@@ -106,7 +110,15 @@ def organize_ports(list1):
 
 '''
 
+list_ports = generate_ports(2,"juniper")
+logging.info('Correctly generated list of ports')
 
+ports_organize = organize_ports(list_ports)
+logging.info('Port are now organized')
+
+
+pprint(ports_organize[0])
+logging.info('First port printed')
 
 
 
